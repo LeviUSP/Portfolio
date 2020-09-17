@@ -21,3 +21,22 @@
     opacity: 1;
   }
 }
+
+section .background .left-polygon {
+  width: 0;
+  animation: forwards ease-in 1s appearBackground 500ms;
+}
+
+section .background .right-polygon {
+  width: 0;
+  animation: forwards ease-in 1s appearBackground 500ms;
+}
+
+@keyframes appearBackground {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
