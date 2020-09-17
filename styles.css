@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Sc", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 100px;
+
+  /* background-color: aqua; */
+}
+
+#vestibulapp {
+  margin-top: -200px !important;
+}
+
+#badaro {
+  height: 90vh;
+}
+
+section .background {
+  position: relative;
+  z-index: -1000;
+  overflow-x: unset;
+}
+section:nth-child(2n) .background {
+  opacity: 0;
+}
+
+section .background .left-polygon {
+  position: absolute;
+  left: 0;
+  top: -800px;
+  width: 90%;
+  max-width: 600px;
+  z-index: -4;
+  transform: rotate(180deg);
+}
+
+section .background .right-polygon {
+  position: absolute;
+  right: 0;
+  top: -200px;
+  width: 90%;
+  max-width: 600px;
+  z-index: -5;
+}
+
+section .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 40px;
+}
+
+section:nth-child(2n) .container {
+  flex-wrap: wrap;
+}
+
+section .container .information {
+  width: 100%;
+  max-width: 400px;
+}
+h1 {
+  font-size: 7.5vh;
+  width: auto;
+}
+
+.subtitle {
+  font-size: 4vh;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 680px !important;
+  height: 10vh;
+}
+
+section .container .avatar {
+  height: 300px;
+  width: 300px;
+
+  border-radius: 50%;
+  background: url("./assets/Minha\ Imagem.png");
+  background-size: 100%;
+  background-position: 50% 10%;
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+section .container article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+section .container article h2 {
+  font-size: 5vh;
+}
+
+section .container article h3 {
+  font-size: 3vh;
+  font-style: italic;
+}
+section .container article p {
+  margin: 13px 0;
+  font-size: 3.5vh;
+  width: 100%;
+  max-width: 600px;
+}
+
+section .container article span {
+  margin-top: 25px !important;
+  color: #290f51;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+section .container article a {
+  margin: 12px auto;
+  border-radius: 8px;
+  background-color: #290f51;
+  color: #ffff;
+  text-decoration: none;
+  padding: 5px 12px;
+  font-size: 2.5vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+section .container img {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 465px) {
+  section .container img {
+    height: 50%;
+  }
+}
+
+#employee-review .container img {
+  width: 120%;
+  max-width: 500px;
+}

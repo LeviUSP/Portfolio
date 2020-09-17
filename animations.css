@@ -1,0 +1,23 @@
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 4vh;
+  margin-top: 1.5vh;
+  border-right: 2px solid black;
+  margin-left: 2px;
+  animation: blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
