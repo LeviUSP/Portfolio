@@ -152,6 +152,10 @@ section .container img:hover {
   transform: scale(1.1);
 }
 
+#badaro-forms .container img {
+  max-width: 400px;
+}
+
 @media (max-width: 465px) {
   section .container img {
     height: 50%;
