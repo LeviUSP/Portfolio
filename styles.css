@@ -167,3 +167,7 @@ section .container img:hover {
 #badaro-forms .container img {
   max-width: 400px;
 }
+
+#Genesis img {
+  max-width: 400px;
+}
