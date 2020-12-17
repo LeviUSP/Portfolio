@@ -1,7 +1,7 @@
 const texts = [
-  "Trompetista",
-  "Aluno de Sistemas de Informação da USP",
-  "Engenheiro de Software",
+  "Trumpeter",
+  "Software Engineer",
+  "Aspiring Enterpreneur",
 ];
 let count = 0;
 let index = 0;
@@ -18,5 +18,5 @@ let letter = "";
     count++;
     index = 0;
   }
-  setTimeout(type, 300);
+  setTimeout(type, 250);
 })();
