@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Sc", sans-serif;
+}
+
+body {
+  background-color: #494674;
+  color: white;
+  background-image: url('../img/Stars.svg');
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #78759c;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1.2;
+}
+
+header * {
+  margin: 20px 50px;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 200px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#home  {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+#home .column {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home #rocket-container {
+  width: 100%;
+  height: 70%;
+}
+
+#home #rocket-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+#home #rocket-container #inside-fire, #home #rocket-container #outside-fire {
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: fire 0.2s infinite linear;
+}
+
+
+
+@keyframes fire {
+  0% {
+    transform: scaleX(0.8);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.8);
+  }
+}
+
+
+
+#projects .hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#projects .hero #projects-image {
+  width: 2%;
+  background-image: url('../img/Projects\ Background.png');
+  height: 2%;
+  transition: 1.2s;
+}
+
+#projects .hero[data-scroll='in'] #projects-image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#projects .hero .headline {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  opacity: 0;
+  transform: translate(-20%, 0%);
+  transition: 1.2s;
+}
+
+#projects .hero .headline[data-scroll='in'] {
+  transform: translate(50%, 0%);
+  opacity: 1;
+}
+
+#projects .projects-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#projects .projects-col {
+  width: 100%;
+  max-width: 350px;
+}
+
+.project-card {
+  width: 200px;
+  height: 350px;
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 70%;
+}
+
+.project-card .card-footer {
+
+}
