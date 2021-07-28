@@ -12,12 +12,12 @@
 <body>
   <header>
     <img src="./assets/img/Logo.svg" alt="Logo" style="width: 40px;" />
-    <i class="fas fa-bars fa-lg"></i>
+    <!-- <i class="fas fa-bars fa-lg"></i> -->
   </header>
   <section id="home">
     <div class="column">
       <h1>JOIN WITH ME IN THIS JOURNEY</h1>
-      <button>Lauch Today</button>
+      <a href="#contact">Lauch Today</a>
     </div>
     <div class="column">
       <div id="rocket-container">
@@ -265,24 +265,12 @@
   </section>
   <section id="contact">
     <h1>Contact Me</h1>
-    <form>
-      <div class="input">
-        <input required type="text" id="name"/>
-        <label for="name">Name*</label>
-        <span class="error"></span>
-      </div>
-      <div class="input">
-        <input required type="email" id="email"/>
-        <label for="email">Email*</label>
-        <span class="error"></span>
-      </div>
-      <div class="input">
-        <input required type="text" id="message"/>
-        <label for="message">Message</label>
-        <span class="error"></span>
-      </div>
-      <input type="button" value="Send"/>
-    </form>
+    <div class="contacts-container">
+      <a class="contact" href="https://www.linkedin.com/in/levi-fernandes-00/"><i class="fab fa-linkedin-in"></i></a>
+      <a class="contact" href="https://github.com/Levifernandes00"><i class="fab fa-github"></i></a>
+      <a class="contact" href="mailto:levi.o.fernandes@outlook.com"><i class="fas fa-envelope-open"></i></a>
+      <a class="contact" href="https://wa.me/+5515981064484"><i class="fab fa-whatsapp"></i></a>
+    </div>
   </section>
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <script src="./assets/js/script.js"></script>
