@@ -1,265 +1,279 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./animations.css" />
-  </head>
-  <body>
-    <section id="introduction">
-      <div class="background">
-        <img
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href="./assets/css/fontawesome/css/all.css" rel="stylesheet">
+  <title>Levi</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/img/Logo.svg" alt="Logo" style="width: 40px;" />
+    <!-- <i class="fas fa-bars fa-lg"></i> -->
+  </header>
+  <section id="home">
+    <div class="column">
+      <h1>JOIN WITH ME IN THIS JOURNEY</h1>
+      <a href="#contact">Lauch Today</a>
+    </div>
+    <div class="column">
+      <div id="rocket-container">
+        <svg id="rocket" width="377" height="837" viewBox="0 0 377 837" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="inside-fire" d="M117.255 700.12C117.354 647.965 146.423 647.055 182.28 647.122C218.137 647.19 276.987 657.618 247.105 700.365C215.588 745.45 161.502 831.398 181.925 835.994C181.925 835.994 117.157 752.276 117.255 700.12Z" fill="#F9A825"/>
+          <path id="outside-fire" opacity="0.5" d="M159.354 678.871C159.413 647.656 170.92 647.101 185.113 647.127C199.307 647.154 222.598 653.373 210.753 678.968C198.26 705.963 176.818 757.423 184.901 760.166C184.901 760.166 159.295 710.086 159.354 678.871Z" fill="#FF6584"/>
+          <path d="M106.273 569.96C103.707 570.416 101.194 571.133 98.7731 572.1C44.8331 593.64 45.7331 734.64 45.7331 734.64H29.8531C29.8531 734.64 24.8531 674.13 3.06306 587.8C-16.5669 510.13 63.9431 440.52 80.2931 427.32C82.1331 425.85 83.1531 425.07 83.1531 425.07C164.243 454.87 106.273 569.96 106.273 569.96Z" fill="#AFC0E0"/>
+          <path opacity="0.2" d="M89.0538 427.52C87.1838 426.66 85.2538 425.84 83.2038 425.09C83.2038 425.09 82.2038 425.87 80.3438 427.34C63.9938 440.54 -16.5162 510.15 3.11384 587.82C24.9038 674.15 29.8538 734.64 29.8538 734.64H38.7838C38.7838 734.64 33.8338 674.13 11.9938 587.8C-7.55616 510.49 72.1738 441.14 89.0538 427.52Z" fill="white"/>
+          <path d="M373.813 587.82C351.973 674.15 347.053 734.64 347.053 734.64H331.143C331.143 734.64 332.143 587.28 274.413 570.83C273.163 570.455 271.89 570.158 270.603 569.94C270.603 569.94 212.603 454.85 293.723 425.07C293.723 425.07 294.543 425.68 296.023 426.87C311.053 438.9 393.663 509.25 373.813 587.82Z" fill="#AFC0E0"/>
+          <path opacity="0.1" d="M106.273 569.96C103.707 570.416 101.193 571.133 98.773 572.1C89.0209 524.374 82.8437 475.986 80.293 427.34C82.133 425.87 83.153 425.09 83.153 425.09C164.243 454.87 106.273 569.96 106.273 569.96Z" fill="black"/>
+          <path opacity="0.1" d="M296.053 426.89C292.747 475.394 285.52 523.552 274.443 570.89C273.193 570.515 271.921 570.218 270.633 570C270.633 570 212.633 454.91 293.753 425.13C293.723 425.09 294.543 425.7 296.053 426.89Z" fill="black"/>
+          <path d="M266.364 591.78C260.764 613.873 254.2 636.54 246.674 659.78C246.674 659.78 210.954 696.99 124.674 659.78C124.674 659.78 116.054 635.48 106.574 594.17C85.7036 503.34 60.6736 330.25 114.004 152.46C129.885 99.0128 152.457 47.7869 181.184 0C181.184 0 226.744 52.31 260.184 152.43C293.624 252.55 314.904 400.5 266.364 591.78Z" fill="#E3E8F4"/>
+          <path d="M188.434 365.23C227.994 365.23 260.064 333.16 260.064 293.6C260.064 254.04 227.994 221.97 188.434 221.97C148.874 221.97 116.804 254.04 116.804 293.6C116.804 333.16 148.874 365.23 188.434 365.23Z" fill="#AFC0E0"/>
+          <path d="M239.234 293.64C239.233 303.26 236.502 312.682 231.356 320.81C226.211 328.938 218.864 335.438 210.169 339.554C201.474 343.67 191.789 345.233 182.241 344.06C172.693 342.887 163.674 339.028 156.234 332.93C152.602 329.939 149.399 326.463 146.714 322.6C145.508 320.874 144.412 319.074 143.434 317.21C139.624 309.938 137.637 301.85 137.644 293.64C137.644 293.23 137.644 292.83 137.644 292.43C137.904 281.567 141.637 271.072 148.295 262.485C154.954 253.897 164.188 247.668 174.644 244.71C178.636 243.61 182.745 242.985 186.884 242.85H188.404C195.076 242.846 201.685 244.157 207.851 246.707C214.017 249.258 219.62 252.998 224.34 257.715C229.061 262.431 232.806 268.032 235.361 274.196C237.916 280.36 239.232 286.967 239.234 293.64Z" fill="#6C63FF"/>
+          <path d="M260.173 152.43C178.903 191.34 113.953 152.43 113.953 152.43C129.852 98.9907 152.441 47.775 181.183 0C181.183 0 226.743 52.31 260.173 152.43Z" fill="#AFC0E0"/>
+          <path d="M266.363 591.78C262.563 606.74 258.33 621.957 253.663 637.43C251.45 644.81 249.117 652.25 246.663 659.75C246.663 659.75 210.943 696.96 124.663 659.75C124.663 659.75 121.863 651.86 117.663 637.43C114.523 626.53 110.613 611.92 106.533 594.14C106.533 594.14 138.653 607.85 184.243 607.85C212.407 607.947 240.313 602.486 266.363 591.78Z" fill="#AFC0E0"/>
+          <path d="M253.663 637.43C251.45 644.81 249.116 652.25 246.663 659.75C246.663 659.75 210.943 696.96 124.663 659.75C124.663 659.75 121.863 651.86 117.663 637.43C117.653 637.43 205.593 662.73 253.663 637.43Z" fill="#E3E8F4"/>
+          <path opacity="0.2" d="M174.673 244.64L174.563 244.72L137.663 292.36C137.663 292.76 137.663 293.16 137.663 293.57C137.656 301.78 139.643 309.868 143.453 317.14L186.933 242.78L174.673 244.64Z" fill="white"/>
+          <path opacity="0.2" d="M186.454 287.64L156.234 332.89C152.602 329.899 149.399 326.423 146.714 322.56L182.714 283.92L186.454 287.64Z" fill="white"/>
+          <path opacity="0.2" d="M143.974 659.76C143.974 659.76 135.354 635.45 125.874 594.15C105.004 503.31 79.9738 330.22 133.304 152.43C147.639 104.324 167.382 57.9983 192.154 14.34C185.384 4.85001 181.154 0.0100098 181.154 0.0100098C152.422 47.783 129.844 98.9954 113.954 152.43C60.6238 330.22 85.6538 503.31 106.524 594.15C116.004 635.45 124.624 659.76 124.624 659.76C158.714 674.45 184.904 677.53 204.124 675.89C187.704 674.64 167.764 670.01 143.974 659.76Z" fill="white"/>
+        </svg>   
       </div>
-
-      <div class="container">
-        <article class="information">
-          <h1 class="title">I'm Levi</h1>
-          <p class="typing subtitle"></p>
-        </article>
-        <div class="avatar"></div>
+    </div>
+  </section>
+  <section id="services">
+    <h1>SERVICES</h1>
+    <div class="services-container">
+      <div class="service">
+        <img src="./assets/img/Mobile Service.svg" alt="App Service"/>
+        <h3>APPS</h3>
       </div>
-    </section>
-    <section id="my-projects">
-      <div class="container">
-        <div></div>
-        <h1>My projects</h1>
+      <div class="service">
+        <img src="./assets/img/System Service.svg" alt="System Service"/>
+        <h3>SYSTEMS</h3>
       </div>
-    </section>
-    <section id="vestibulapp">
-      <div class="background">
-        <img
-          id="first-left-polygon"
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          id="first-right-polygon"
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
+      <div class="service">
+        <img src="./assets/img/Infra Service.svg" alt="Infra Service"/>
+        <h3>INFRASTRUCTURE</h3>
       </div>
-      <div class="container">
-        <article>
-          <h2>Vestibulapp</h2>
-          <h3>2018</h3>
-          <p>
-            This is a native app that helps high school students to study to college exams. 
-            And this was the project which helped in my Java and mobile development learning.
-          </p>
-          <span class="tecnologies">Android Studio</span>
-        </article>
-        <img src="./assets/Vestibulapp.svg" alt="Vestibulapp.svg" />
-      </div>
-    </section>
-    <section id="employee-review">
-      <div class="background">
-        <img
-          id="first-left-polygon"
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          id="first-right-polygon"
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-      </div>
-      <div class="container">
-        <img src="./assets/Employee Review.svg" alt="Employee Review.svg" />
-        <article>
-          <h2>Employee Review</h2>
-          <h3>2019</h3>
-          <p>
-            A static website simulating a web system which helps to make reviews from employees.
-            This system was developed using Design Thinking techniques.
-          </p>
-          <span class="tecnologies">HTML, CSS and JAVASCRIPT</span>
-          <a
-            href="https://leviusp.github.io/employee-reports/"
+    </div>
+  </section>
+  <section id="projects">
+    <div class="hero">
+      <div id="projects-image" class="parallax"></div>
+      <!-- <img src="./assets/img/Projects Background.png" alt="Projects Background"> -->
+      <h1 class="headline">PROJECTS</h1>
+    </div>
+    <div class="projects-list">
+      <div class="projects-col col-left">
+        <!-- Project Card -->
+        <div id="vestibulapp" class="project-card">
+          <img src="./assets/img/Vestibulapp.svg" alt="Vestibulapp" />
+          <div class="card-footer">
+            <h3>Vestibulapp</h3>
+            <i class="fas fa-expand-alt"></i>
+          </div>
+          <article>
+            <i class="fas fa-compress-alt"></i>
+            <h2>Vestibulapp</h2>
+            <h3>2018</h3>
+            <p>
+              This is a native app that helps high school students to study to college exams. 
+              And this was the project which helped in my Java and mobile development learning.
+            </p>
+            <span class="tecnologies">Android Studio</span>
+          </article>
+        </div>
+        <!-- Project Card -->
+        <div id="comidinhas-EACH" class="project-card">
+          <img src="./assets/img/Comidinhas EACH.svg" alt="Comidinhas" />
+          <div class="card-footer">
+            <h3>Comidinhas EACH</h3>
+            <i class="fas fa-expand-alt"></i>
+          </div>
+          <article>
+            <i class="fas fa-compress-alt"></i>
+            <h2>Comidinhas EACH</h2>
+            <h3>2019</h3>
+            <p>
+              A hybrid app to create connections between homemade food vendors and customers inside the college. 
+              In this project I was responsible for the backend and integration with database.
+            </p>
+            <span class="tecnologies">React Native, NodeJS, AWS</span>
+            <a
+              href="https://www.linkedin.com/posts/matheus-aquati-kurianski-03193516a_h%C3%A1-1-ano-atr%C3%A1s-meu-professor-de-fundamentos-activity-6607412683266420736-K3NM/"
+              class="show-more"
+              target="_blank"
+              >See</a
+            >
+          </article>
+        </div>
+        <!-- Project Card -->
+        <div id="manwe" class="project-card">
+          <img src="./assets/img/Manwe.svg" alt="Manwe" />
+          <div class="card-footer">
+            <h3>Manwe</h3>
+            <i class="fas fa-expand-alt"></i>
+          </div>
+          <article>
+            <i onclick="compressProjectCard()" class="fas fa-compress-alt"></i>
+            <h2>Manwe</h2>
+            <h3>2020</h3>
+            <p>
+              This is a hybrid app to create and share events in a fast way and also you can find events near you.
+            </p>
+            <span class="tecnologies">React Native, NodeJS, MongoDB</span>
+            <a
+              href="https://youtu.be/wdwD5JoCeWg"
+              class="show-more"
+              target="_blank"
+              >See</a
+            >
+          </article>
+        </div>
+        <!-- Project Card -->
+        <div id="atech" class="project-card">
+          <img src="./assets/img/Atech_embraer.png" alt="Atech_embraer" />
+          <div class="card-footer">
+            <h3>ATECH Design System</h3>
+            <i class="fas fa-expand-alt"></i>
+          </div>
+          <article>
+            <i class="fas fa-compress-alt"></i>
+            <h2> ATECH Design System </h2>
+            <h3>2020, with Badaró Agency.</h3>
+            <p>
+              Angular Desing System developed for responsive utilization (mobile and desktop). Design System published with access validation scheme and use control. Documentation for utilization of the components and technical documentation for implementing others.
+            </p>
+            <span class="tecnologies">AngularJS</span>
+          </article>
+        </div>
+        <!-- Project Card -->
+        <div id="genesis-distribution" class="project-card">
+          <img src="./assets/img/Genesis.svg" alt="Genesis Distribution" />
+          <div class="card-footer">
+            <h3>Genesis Distribution</h3>
+            <i class="fas fa-expand-alt"></i>
+          </div>
+          <article>
+            <i class="fas fa-compress-alt"></i>
+            <h2>Genesis Distribution Ecommerce</h2>
+            <h3>2020</h3>
+            <p>Ecommerce for foundry's market</p>
+            <span class="tecnologies">NextJs e Firebase</span>
+            <a
+            href="https://gendist-ecommerce.herokuapp.com/"
             class="show-more"
             target="_blank"
             >See</a
-          >
-        </article>
+            >
+          </article>
+        </div>
       </div>
-    </section>
-    <section id="comidinhas-each">
-      <div class="background">
-        <img
-          id="first-left-polygon"
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          id="first-right-polygon"
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
+      <div class="projects-col col-right">
+        <div class="projects-col col-left">
+          <!-- Project Card -->
+          <div id="employee-review" class="project-card">
+            <img src="./assets/img/Employee Review.svg" alt="Employee Review" />
+            <div class="card-footer">
+              <h3>Employee Review</h3>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+            <article>
+              <i class="fas fa-compress-alt"></i>
+              <h2>Employee Review</h2>
+              <h3>2019</h3>
+              <p>
+                A static website simulating a web system which helps to make reviews from employees.
+                This system was developed using Design Thinking techniques.
+              </p>
+              <span class="tecnologies">HTML, CSS and JAVASCRIPT</span>
+              <a
+                href="https://levifernandes00.github.io/employee-reports/"
+                class="show-more"
+                target="_blank"
+                >See</a
+              >
+            </article>
+          </div>
+          <!-- Project Card -->
+          <div id="upn" class="project-card">
+            <img src="./assets/img/Upn.svg" alt="Upn" />
+            <div class="card-footer">
+              <h3>Upn</h3>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+            <article>
+              <i class="fas fa-compress-alt"></i>
+              <h2>Upn</h2>
+              <h3>2019</h3>
+              <p>
+                Upn is a hybrid app that looks to facilitate the communication between human resources and the candidates using whatsapp and making resumes in one click away.
+              </p>
+              <span class="tecnologies"
+                >React Native, Node JS, Express, MongoDB</span
+              >
+              <a
+                href="https://www.youtube.com/watch?v=rOvl2MHYprQ&feature=youtu.be"
+                class="show-more"
+                target="_blank"
+                >See</a
+              >
+            </article>
+          </div>
+          <!-- Project Card -->
+          <div id="jusplay" class="project-card">
+            <img src="./assets/img/jusplay.svg" alt="jusplay" />
+            <div class="card-footer">
+              <h3>Jusplay</h3>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+            <article>
+              <i class="fas fa-compress-alt"></i>
+              <h2>Jusplay</h2>
+              <h3>2020, with Badaró Agency.</h3>
+              <p>
+                API development using Firebase and Cloud Functions for utilization of audio player native apps (iOS and Android) of juridical content. Development of a ReactJS system for management of this audio content. And the creation of a dashboard containing the app's utilization reports.
+              </p>
+              <span class="tecnologies">Firebase, Cloud Functions, ReactJS</span>
+            </article>
+          </div>
+          <!-- Project Card -->
+          <div id="badaro-forms" class="project-card">
+            <img src="./assets/img/Badaró Forms.svg" alt="badaro-forms" />
+            <div class="card-footer">
+              <h3>Badaró Forms</h3>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+            <article>
+              <i class="fas fa-compress-alt"></i>
+              <h2>Badaró Agency Forms</h2>
+              <h3>2020</h3>
+              <p>Contact Forms with microinteractions</p>
+              <span class="tecnologies">HTML, CSS, JAVASCRIPT</span>
+              <a
+              href="https://levifernandes00.github.io/forms-badaro/"
+              class="show-more"
+              target="_blank"
+              >See</a
+              >
+            </article>
+          </div>
       </div>
-      <div class="container">
-        <article>
-          <h2>Comidinhas EACH</h2>
-          <h3>2019</h3>
-          <p>
-            A hybrid app to create connections between homemade food vendors and customers inside the college. 
-            In this project I was responsible for the backend and integration with database.
-          </p>
-          <span class="tecnologies">React Native, NodeJS, AWS</span>
-          <a
-            href="https://www.linkedin.com/posts/matheus-aquati-kurianski-03193516a_h%C3%A1-1-ano-atr%C3%A1s-meu-professor-de-fundamentos-activity-6607412683266420736-K3NM/"
-            class="show-more"
-            target="_blank"
-            >See</a
-          >
-        </article>
-        <img src="./assets/Comidinhas EACH.svg" alt="Comidinhas EACH.svg" />
-      </div>
-    </section>
-    <section id="upn">
-      <div class="background">
-        <img
-          id="first-left-polygon"
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          id="first-right-polygon"
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-      </div>
-      <div class="container">
-        <img src="./assets/Upn.svg" alt="Upn.svg" />
-        <article>
-          <h2>Upn</h2>
-          <h3>2019</h3>
-          <p>
-            Upn is a hybrid app that looks to facilitate the communication between human resources and the candidates using whatsapp and making resumes in one click away.
-          </p>
-          <span class="tecnologies"
-            >React Native, Node JS, Express, MongoDB</span
-          >
-          <a
-            href="https://www.youtube.com/watch?v=rOvl2MHYprQ&feature=youtu.be"
-            class="show-more"
-            target="_blank"
-            >See</a
-          >
-        </article>
-      </div>
-    </section>
-    <section id="manwe">
-      <div class="background">
-        <img
-          id="first-left-polygon"
-          class="left-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-        <img
-          id="first-right-polygon"
-          class="right-polygon"
-          src="./assets/Polygon.svg"
-          alt="Background Polygon"
-        />
-      </div>
-      <div class="container">
-        <article>
-          <h2>Manwe</h2>
-          <h3>2020</h3>
-          <p>
-            This is a hybrid app to create and share events in a fast way and also you can find events near you.
-          </p>
-          <span class="tecnologies">React Native, NodeJS, MongoDB</span>
-          <a
-            href="https://youtu.be/wdwD5JoCeWg"
-            class="show-more"
-            target="_blank"
-            >See</a
-          >
-        </article>
-        <img src="./assets/Manwe.svg" alt="Manwe.svg" />
-      </div>
-    </section>
-    <section id="badaro">
-      <div class="container">
-        <img src="./assets/jusplay.svg" alt="Jusplay.svg" />
-        <article>
-          <h2>Jusplay – Sistema Administrativo e Aplicativo</h2>
-          <h3>2020, with Badaró Agency.</h3>
-          <p>
-            API development using Firebase and Cloud Functions for utilization of audio player native apps (iOS and Android) of juridical content. Development of a ReactJS system for management of this audio content. And the creation of a dashboard containing the app's utilization reports.
-          </p>
-          <span class="tecnologies">Firebase, Cloud Functions, ReactJS</span>
-        </article>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <article>
-          <h2> ATECH Design System </h2>
-          <h3>2020, with Badaró Agency.</h3>
-          <p>
-            Angular Desing System developed for responsive utilization (mobile and desktop). Design System published with access validation scheme and use control. Documentation for utilization of the components and technical documentation for implementing others.
-          </p>
-          <span class="tecnologies">AngularJS</span>
-        </article>
-        <img src="./assets/Atech_embraer.png" alt="Atech.svg" />
-      </div>
-    </section>
-    <section id="badaro-forms">
-      <div class="container">
-        <img src="./assets/Badaró Forms.svg" alt="Badaro" />
-        <article>
-          <h2>Badaró Agency Forms</h2>
-          <h3>2020</h3>
-          <p>Contact Forms with microinteractions</p>
-          <span class="tecnologies">HTML, CSS, JAVASCRIPT</span>
-          <a
-          href="https://leviusp.github.io/forms-badaro/"
-          class="show-more"
-          target="_blank"
-          >See</a
-          >
-        </article>
-      </div>
-    </section>
-    <section id="Genesis">
-      <div class="container">
-        <article>
-          <h2>Genesis Distribution Ecommerce</h2>
-          <h3>2020</h3>
-          <p>Ecommerce for foundry's market</p>
-          <span class="tecnologies">NextJs e Firebase</span>
-          <a
-          href="https://gendist-ecommerce.herokuapp.com/"
-          class="show-more"
-          target="_blank"
-          >See</a
-          >
-        </article>
-        <img src="./assets/Genesis.svg" alt="Genesis" />
-      </div>
-    </section>
-    <script src="./app.js"></script>
-  </body>
+    </div>
+  </section>
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <div class="contacts-container">
+      <a class="contact" href="https://www.linkedin.com/in/levi-fernandes-00/"><i class="fab fa-linkedin-in"></i></a>
+      <a class="contact" href="https://github.com/Levifernandes00"><i class="fab fa-github"></i></a>
+      <a class="contact" href="mailto:levi.o.fernandes@outlook.com"><i class="fas fa-envelope-open"></i></a>
+      <a class="contact" href="https://wa.me/+5515981064484"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/fieldsValidation.js"></script>
+</body>
 </html>
